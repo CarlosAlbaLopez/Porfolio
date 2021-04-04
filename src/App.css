@@ -6,19 +6,42 @@
   --primary-dark: rgba(255, 255, 255, 0);
   --primary-red: #ef4035;
   --primary-hover-red: #f33501;
+  --wheel-white: #f5f6f7;
+  --wheel-dark-blue: #0b8cbf;
+  --wheel-blue: #0db3d9;
+  --wheel-yellow: #f2e857;
+  --wheel-light-brown: #bf8450;
+  --wheel-brown: #a65c32;
+  --wheel-black: #171b1d;
+  --coolors-white: #f4f7f5;
+  --coolors-grey: #423e3b;
+  --coolors-blue: #3581b8;
+  --coolors-violet: #9000b3;
+  --coolors-midnight: #080357;
+  --look-black: #000000;
+  --look-light-black: #171717;
+  --look-grey: #d8d8d8;
+  --look-violet: #53599a;
+  --look-green: #56876d;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   font-family: "Rubik";
+  overflow-x: hidden;
 }
 
 /******************************* NAVBAR *******************************/
 
-nav {
-  z-index: 2;
+.navbar {
+  align-self: flex-end;
+  margin-top: 0.5rem;
+  font-weight: bold;
 }
 
-/*----- NAV LINKS -----*/
 nav a.nav-link {
   letter-spacing: 0.0375rem;
   cursor: pointer;
@@ -31,32 +54,23 @@ nav ul li {
 .navbar-nav > li > a {
   margin-right: 0.75rem;
   margin-left: 0.75rem;
-  color: var(--primary-white) !important;
-  border-top: 0.1875rem solid var(--primary-dark);
+  color: var(--coolors-white) !important;
+  border-top: 0.1875rem solid var(--look-black);
 }
-
-.navbar-brand {
-  max-width: 17.25rem;
-  padding: 0;
-  height: 3rem;
-  color: var(--primary-white) !important;
-  padding-top: 0.75rem;
-}
-
 .navbar-nav > li > a.active,
 .navbar-nav > li > a.active:focus {
-  border-top: 0.1875rem solid var(--primary-orange);
+  border-top: 0.1875rem solid var(--look-violet);
 }
 
 .navbar-nav > li > a:hover {
-  border-top: 0.1875rem solid var(--primary-orange);
+  border-top: 0.1875rem solid var(--look-violet);
 }
 
 /******************************* HEADER *******************************/
 
 .header-wraper {
   position: relative;
-  background: url("./fondo-nasa.jpg") no-repeat;
+  background: var(--look-grey);
   background-size: cover;
   background-position: center;
   height: 90vh;
@@ -70,60 +84,98 @@ nav ul li {
   right: 0;
   bottom: 0;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   text-align: center;
   font-family: "Rubik";
   z-index: 1;
+  background-image: linear-gradient(100deg, transparent 50%, #000 50%);
 }
 
 .main-info h1 {
-  color: var(--primary-orange);
-  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 95px;
 }
 
-/*----- TYPED TEXT -----*/
-.typed-text {
-  font-size: 2rem;
-  color: var(--primary-white);
+.main-info h2 {
+  font-weight: bold;
+  align-self: flex-start;
+  font-size: 40px;
+  margin-bottom: 6rem;
 }
 
-@media (max-width: 768px) {
-  .main-info h1 {
-    font-size: 1.7rem !important;
-  }
-  .typed-text {
-    font-size: 1.3rem !important;
-  }
+.main-info h3 {
+  color: grey;
+  font-weight: bold;
+  margin-bottom: 6rem;
 }
 
-/*----- HEADER MAIN OFFER BUTTON -----*/
+.info-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex: 1 1;
+  width: 100%;
+}
+
+.my-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: 0 auto;
+}
+
+.my-photo {
+  align-self: flex-end;
+  margin-left: auto;
+}
+
+#foto {
+  max-width: 760px;
+}
+
+/*----- HEADER BUTTONS -----*/
+.buttons {
+  display: flex;
+}
+
 .btn-main-offer {
-  border: 1px solid var(--primary-red);
-  text-transform: uppercase;
-  border-radius: 0;
-  padding: 0.625rem 0.75rem 0.75rem 0.75rem;
-  color: var(--primary-white);
-  margin-top: 2rem;
+  margin-right: 2rem;
 }
 
 .btn-main-offer:hover {
+  border: none;
+  border-radius: 50%;
   text-decoration: none;
-  background-color: var(--primary-hover-red);
-  color: var(--primary-white);
+  background-color: var(--look-violet);
+  color: var(--look-grey);
   transition: 0.2s ease-in-out;
 }
 
-/*----- PARTICLES JS -----*/
-.tsparticles-canvas-el {
-  position: absolute;
-  height: 100vh;
-  width: 100vw;
-  z-index: 1;
+/******************************* SKILLS *******************************/
+
+.skills-container {
+  background-image: radial-gradient(
+    circle,
+    var(--coolors-white) 0%,
+    var(--look-grey) 50%
+  );
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-@media (max-width: 768px) {
-  .particles-canvas {
-    display: none;
-  }
+#linktoskills {
+  margin: 0 auto;
+  font-weight: bold;
+  color: var(--look-light-black);
+  font-size: 40px;
+  padding: 3rem 0;
+  text-transform: uppercase;
+}
+
+.skills-container img {
+  max-width: 75px;
+  margin: 2rem;
 }
