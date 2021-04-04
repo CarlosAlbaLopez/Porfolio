@@ -4,7 +4,7 @@ import { Typography, Box } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
   mainContainer: {
-    background: "#233",
+    background: "#171717",
   },
   timeLine: {
     position: "relative",
@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
       content: "''",
       position: "absolute",
       height: "100%",
-      border: "1px solid tan",
+      border: "1px solid #53599a",
       right: "40px",
       top: 0,
     },
@@ -34,8 +34,9 @@ const useStyles = makeStyles((theme) => ({
   timeLineItem: {
     fontFamily: "Rubik",
     fontSize: "2rem",
+    fontWeight: "bold",
     padding: "1rem",
-    borderBottom: "2px solid tan",
+    borderBottom: "2px solid #53599a",
     position: "relative",
     margin: "1rem 3rem 1rem 1rem",
     clear: "both",
@@ -49,7 +50,7 @@ const useStyles = makeStyles((theme) => ({
       right: "-0.625rem",
       top: "calc(50% - 5px)",
       borderStyle: "solid",
-      borderColor: "tomato tomato transparent transparent",
+      borderColor: "#53599a #53599a transparent transparent",
       borderWidth: "0.625rem",
       transform: "rotate(45deg)",
     },
@@ -59,12 +60,12 @@ const useStyles = makeStyles((theme) => ({
       "&:nth-of-type(2n)": {
         float: "right",
         margin: "1rem",
-        borderColor: "tan",
+        borderColor: "#53599a",
       },
       "&:nth-of-type(2n):before": {
         right: "auto",
-        left: ".-0.625rem",
-        borderColor: "transparent transparent tomato tomato",
+        left: "-0.625rem",
+        borderColor: "transparent transparent #53599a #53599a",
       },
     },
   },
@@ -72,8 +73,8 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "center",
     maxWidth: "11.375rem",
     margin: "0 3rem 0 auto",
-    background: "tomato",
-    color: "white",
+    background: "#000",
+    color: "#f4f7f5",
     lineHeight: 1,
     padding: "1rem",
     "&:before": {
@@ -92,12 +93,15 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   heading: {
-    color: "tomato",
+    color: "#f4f7f5",
+    fontSize: "40px",
+    fontWeight: "bold",
     padding: "3rem 0",
     textTransform: "uppercase",
   },
   subHeading: {
-    color: "white",
+    color: "#f4f7f5",
+    fontSize: "32px",
     padding: "0",
     textTransform: "uppercase",
   },
@@ -109,7 +113,9 @@ const Resume = () => {
     <>
       <Box component="header" className={classes.mainContainer}>
         <Typography variant="h4" align="center" className={classes.heading}>
-          working experience
+          <a id="linktowork" href>
+            trayectoria profesional
+          </a>
         </Typography>
         <Box component="div" className={classes.timeLine}>
           <Typography
@@ -124,85 +130,28 @@ const Resume = () => {
               align="center"
               className={classes.subHeading}
             >
-              web design
+              .NET Developer + COO
             </Typography>
             <Typography
               variant="body1"
               align="center"
-              style={{ color: "tomato" }}
+              style={{ color: "#808080" }}
             >
-              company name where worked
+              60dias
             </Typography>
             <Typography
               variant="subtitle1"
               align="center"
-              style={{ color: "tan" }}
+              style={{ color: "#f4f7f5", textAlign: "justify" }}
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              Porttitor eget dolor morbi non arcu.
-            </Typography>
-          </Box>
-          <Typography
-            variant="h2"
-            className={`${classes.timeLineYear} ${classes.timeLineItem}`}
-          >
-            2014
-          </Typography>
-          <Box component="div" className={classes.timeLineItem}>
-            <Typography
-              variant="h5"
-              align="center"
-              className={classes.subHeading}
-            >
-              html y css
-            </Typography>
-            <Typography
-              variant="body1"
-              align="center"
-              style={{ color: "tomato" }}
-            >
-              company name where worked
-            </Typography>
-            <Typography
-              variant="subtitle1"
-              align="center"
-              style={{ color: "tan" }}
-            >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              Porttitor eget dolor morbi non arcu.
-            </Typography>
-          </Box>
-          <Typography
-            variant="h2"
-            className={`${classes.timeLineYear} ${classes.timeLineItem}`}
-          >
-            2017
-          </Typography>
-          <Box component="div" className={classes.timeLineItem}>
-            <Typography
-              variant="h5"
-              align="center"
-              className={classes.subHeading}
-            >
-              sisisi
-            </Typography>
-            <Typography
-              variant="body1"
-              align="center"
-              style={{ color: "tomato" }}
-            >
-              company name where worked
-            </Typography>
-            <Typography
-              variant="subtitle1"
-              align="center"
-              style={{ color: "tan" }}
-            >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              Porttitor eget dolor morbi non arcu.
+              Aumento de la facturación en un 200% mediante la aplicación de
+              procesos de mejora continua, automatización de procesos e
+              implantación de KPIs. <br></br> Reducción en un 50% de los gastos
+              de proveedores externos en el plazo de 1 año mediante negociación
+              con diferentes proveedores. <br></br> Cierre de acuerdos de
+              colaboración y aumento del número de clientes en un 200% a través
+              de negociaciones y la suscripción de acuerdos de nivel de
+              servicio.
             </Typography>
           </Box>
           <Typography
@@ -217,30 +166,30 @@ const Resume = () => {
               align="center"
               className={classes.subHeading}
             >
-              nonono
+              Cofundador
             </Typography>
             <Typography
               variant="body1"
               align="center"
-              style={{ color: "tomato" }}
+              style={{ color: "#808080" }}
             >
-              company name where worked
+              IVA303
             </Typography>
             <Typography
               variant="subtitle1"
               align="center"
-              style={{ color: "tan" }}
+              style={{ color: "#f4f7f5", textAlign: "justify" }}
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              Porttitor eget dolor morbi non arcu.
+              IVA303 es un servicio integral para optimizar la contabilidad
+              financiera de empresas mediante una aplicación móvil de captura de
+              gastos y generación de liquidaciones.
             </Typography>
           </Box>
           <Typography
             variant="h2"
             className={`${classes.timeLineYear} ${classes.timeLineItem}`}
           >
-            2019-2021
+            2020
           </Typography>
           <Box component="div" className={classes.timeLineItem}>
             <Typography
@@ -248,23 +197,23 @@ const Resume = () => {
               align="center"
               className={classes.subHeading}
             >
-              React
+              Desarrollador full stack
             </Typography>
             <Typography
               variant="body1"
               align="center"
-              style={{ color: "tomato" }}
+              style={{ color: "#808080" }}
             >
-              company name where worked
+              HACK A BOSS
             </Typography>
             <Typography
               variant="subtitle1"
               align="center"
-              style={{ color: "tan" }}
+              style={{ color: "#f4f7f5", textAlign: "justify" }}
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              Porttitor eget dolor morbi non arcu.
+              He desarrollado un proyecto de forma autónoma independiente para
+              Hack A Boss, que a su vez ha sido el proyecto de final de
+              bootcamp.
             </Typography>
           </Box>
         </Box>

@@ -5,11 +5,8 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-dark">
+    <nav className="navbar navbar-expand-lg navbar-light">
       <div className="container">
-        <a className="navbar-brand" href="#">
-          LOGO
-        </a>
         <button
           className="navbar-toggler"
           type="button"
@@ -25,28 +22,28 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ml-auto">
             <li className="nav-item active">
-              <a className="nav-link" href="#">
-                Home <span className="sr-only">(current)</span>
+              <a className="nav-link" href="#linktohome">
+                inicio <span className="sr-only">(current)</span>
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
-                about me
+              <a className="nav-link" href="#linktowork">
+                trayectoria
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
-                services
+              <a className="nav-link" href="#linktoskills">
+                habilidades
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
-                portfolio
+              <a className="nav-link" href>
+                proyectos
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
-                contacts
+              <a className="nav-link" href>
+                contacto
               </a>
             </li>
           </ul>
