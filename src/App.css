@@ -179,3 +179,162 @@ nav ul li {
   max-width: 75px;
   margin: 2rem;
 }
+
+/******************************* PROJECTS *******************************/
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#linktoprojects {
+  margin: 0 auto;
+  font-weight: bold;
+  color: var(--look-light-black);
+  font-size: 40px;
+  padding: 3rem 0;
+  text-transform: uppercase;
+}
+
+/*----- CARD -----*/
+.tcard {
+  display: grid;
+  grid-template-columns: 0.1fr 5fr 1fr;
+  margin: 0 2rem 2rem 2rem;
+  background-color: var(--wheel-white);
+  align-items: center;
+  width: 90%;
+  max-width: 1200px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+
+.btns-and-tags {
+  display: flex;
+}
+
+.btns {
+  display: flex;
+}
+
+.btns > button {
+  margin-right: 1rem;
+}
+
+.btns > .btn-project > a {
+  color: white;
+}
+
+.btns > .btn-github > a {
+  color: black;
+}
+
+.btn-project {
+  background-color: green;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5%;
+}
+
+.btn-github {
+  background-color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5%;
+}
+
+.tags {
+  display: flex;
+  margin-left: 10rem;
+}
+
+.tags > div {
+  margin-right: 1rem;
+  font-size: small;
+  padding: 0.2rem;
+  background-color: var(--look-grey);
+  border: none;
+  border-radius: 5%;
+  width: 6rem;
+  text-align: center;
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+  margin: 2rem;
+}
+
+/* .image > img {
+  width: 100%;
+} */
+
+/******************************* CONTACT *******************************/
+#linktocontact {
+  margin: 0 auto;
+  font-weight: bold;
+  color: var(--look-light-black);
+  font-size: 40px;
+  padding: 3rem 0 0 0;
+  text-transform: uppercase;
+}
+
+.form-container {
+  background-color: var(--look-grey);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.form-container a {
+  color: black;
+}
+
+.form-container a:hover,
+.form-container a:active {
+  color: var(--look-light-black);
+}
+
+#contact_form div {
+  margin: 2vw;
+}
+
+#contact_form input,
+#contact_form select,
+#contact_form textarea {
+  box-shadow: 5px 4px 5px var(--look-light-black);
+}
+
+#contact_form textarea {
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+#contact_form select {
+  font-weight: lighter;
+}
+
+#form_button {
+  background-color: var(--look-light-black);
+  color: white;
+  font-weight: bold;
+  border: 2px solid var(--look-light-black);
+  border-radius: 4px;
+  padding: 3% 7%;
+  cursor: pointer;
+}
+
+#form_button:hover {
+  transform: scale(1.2);
+}
+
+#form_button:active {
+  transform: scale(0.8);
+}

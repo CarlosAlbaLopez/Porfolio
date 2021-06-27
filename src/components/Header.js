@@ -1,9 +1,9 @@
 import React from "react";
 import Navbar from "../components/Navbar";
-import foto from "../foto.png";
-import email from "../email.png";
-import linkedin from "../linkedin.png";
-import github from "../github.png";
+import foto from "../images/foto.png";
+import email from "../images/email.png";
+import linkedin from "../images/linkedin.png";
+import github from "../images/github.png";
 
 const Header = () => {
   function getGreeting() {

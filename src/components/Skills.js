@@ -1,19 +1,19 @@
 import React from "react";
-import css3 from "../css3.png";
-import git from "../git.png";
-import html5 from "../html5.png";
-import js from "../js.png";
-import mysql from "../mysql.png";
-import netcore from "../netcore.png";
-import nodejs from "../nodejs.png";
-import react from "../react.png";
-import sqlserver from "../sqlserver.png";
-import visual from "../visual.png";
-import xamarin from "../xamarin.png";
-import gimp from "../gimp.png";
-import vb from "../vb.png";
-import csharp from "../csharp.png";
-import firebase from "../firebase.png";
+import css3 from "../images/css3.png";
+import git from "../images/git.png";
+import html5 from "../images/html5.png";
+import js from "../images/js.png";
+import mysql from "../images/mysql.png";
+import netcore from "../images/netcore.png";
+import nodejs from "../images/nodejs.png";
+import react from "../images/react.png";
+import sqlserver from "../images/sqlserver.png";
+import visual from "../images/visual.png";
+import xamarin from "../images/xamarin.png";
+import gimp from "../images/gimp.png";
+import vb from "../images/vb.png";
+import csharp from "../images/csharp.png";
+import firebase from "../images/firebase.png";
 
 function Skills() {
   return (
