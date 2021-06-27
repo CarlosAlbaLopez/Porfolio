@@ -65,7 +65,6 @@ export default function Contact() {
             <option>Quiero una web.</option>
             <option>Quiero una aplicación móvil.</option>
             <option>Quiero una aplicación de escritorio.</option>
-            <option>Quiero pedir un presupuesto.</option>
             <option>Quiero saber algo más.</option>
           </select>
         </div>
